@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMULARIOS HTML</h1>
+    <hr>
+    <form action="" method="get">
+        <fieldset>
+            <legend>datos personales</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre"value="" required minlength="3" maxlength="10" size="11" >
+        <br>
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" id="usuario" autofocus pattern="[A-Za-z]{3,10}" totle="Debe contener de 3 a 10 caracteres">
+        <br><br>
+        <label for="pass">contraseña</label>
+        <input type="password" name="pass" id="pass">
+        <br><br>
+        <label for="email">Correo electronico</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad">
+        <br><br>
+        <label for="tel">telefono</label>
+        <input type="tel" name="tel" id="tel">
+
+        </fieldset>
+
+        <label for="url">URL</label>
+        <input type="url" name="url" id="url">
+        <br><br>
+        <label for="fecha">fecha</label>
+        <input type="date" name="fecha"id="fecha" value="2006-10-04">
+        <br><br>
+        <label for="hora">Hora</label>
+        <input type="time" name="hora" id="hora" value="20:30:00">
+        <br><br>
+        <label for="sexo">Sexo</label>
+        <input type="radio" name="sexo" id="sexo" value="mujer">mujer
+        <input type="radio" name="sexo" id="sexo" value="hombre">hombre
+        <input type="radio" name="sexo" id="sexo" value="otro"> otro
+        <br><br>
+        <label for="hobbies">pasatiempos</label>
+        <input type="checkbox"name="hobbies" id="hobbies" value="leer">leer
+        <input type="checkbox"name="hobbies" id="hobbies" value="deportes">deportes
+        <br>
+        <label for="color">color</label>
+        <input type="color"name="color" id="color">
+        <br><br>
+        <label for="file">subir archivos</label>
+        <input type="file" name="file" id="file">
+        <br><br>
+        <input type="button" value="clicqueame" onclick="alert('feliz cumpleaños')" onmouseover="alert('suavemente')">
+        <br><br>
+        <input type="image" src="/img/ilustracion-vectorial-empresario-exitoso_969863-139176.avif" alt="enviar" width="50px"onclick="alert('Mundo web')">
+        <br><br>
+        <label for="browser">Navegador de preferida:</label>
+        <input type="text" name="browser" id="browser" list="browser">
+        <br><br>
+        <label for="mes">Mes de ingreso:</label>
+        <input type="month" name="mes" id="mes">
+        <br><br>
+        <label for="inten">Intensidad</label>
+        <input type="range"name="inten"id="inten" min="0" max="50" step="2">
+        
+        <br><br>
+        <input type="submit" value="enviar">
+        <input type="reset"value="limpiar todo">
+        <input type="hidden" name="categoria" value="backend" id="categoria">
+        <label for="comentarios">Comentarios</label>
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="hazme saber tus comentarios"></textarea>
+        <br><br>
+        <label for="ciudadnac">ciudad de nacimiento</label>
+        <select name="ciudadnac" id="ciudadnac" multiple>
+            <option value="Bucaramanga">Bucaramanga </option>
+            <option value="Medellin">Medellin</option>
+            <option value="Bogota" selected>Bogota</option>
+
+
+        </select>
+
+    </form>
+
+</body>
+</html>

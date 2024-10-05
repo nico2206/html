@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formularios</title>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Indique sus preferencias por favor</legend>
+            <label for="fecha">Elija una fecha</label>
+            <input type="date" name="fecha" id="fecha"value="dd/mm/aaaa">
+            <br>
+            <label for="file">Elija un fichero</label>
+            <input type="file" name="file" id="file">
+            <br>
+            <label for="procesador"></label>
+            <input type="radio" name="procesador" id="procesador" value="AMD">AMD
+            <input type="radio" name="procesador" id="procesador" value="Intel i5">Intel i5
+            <input type="radio" name="procesador" id="procesador" value="Intel i7">Intel i7
+        </fieldset>
+        <fieldset>
+            <legend>Indique sus preferencias por favor</legend>
+            <label for="materias"></label>
+            <input type="radio" name="materias" id="materias" value="Matematicas"> Matematicas
+            <input type="radio" name="materias" id="materias" value="Historia"> Historia
+            <input type="radio" name="materias" id="materias" value="Geografia"> Geografia
+            <input type="radio" name="materias" id="materias" value="Lengua"> Lengua
+            <br>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos">
+            <br>
+            <label for="direccion">Direccion</label>
+            <input type="text" name="direccion" id="direccion">
+            <br><br>
+            <label for="color">color</label>
+            <input type="color"name="color" id="color">
+            <br>
+            <label for="comentarios"></label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Utilice este cuadro para escribir"></textarea>
+            <br>
+            <label for="fecha">Elija una fecha</label>
+            <input type="date" name="fecha" id="fecha"value="dd/mm/aaaa">
+            <br>
+            <label for="materias"></label>
+            <select name="materias" id="materias">
+                <option value="ingles" selected>Ingles</option>
+                <option value="Matematicas">Matematicas</option>
+                <option value="Sociales">Sociales</option>
+            </select>
+            <br>
+            <label for="hora">Elija una hora:</label>
+            <input type="time" name="hora" id="hora" value="--:--">
+            <br>
+            <label for="file">Elija un fichero</label>
+            <input type="file" name="file" id="file">
+            <br>
+            <label for="sexo"></label>
+            <input type="radio" name="sexo" id="sexo" value="mujer">mujer
+            <input type="radio" name="sexo" id="sexo" value="hombre">hombre
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
